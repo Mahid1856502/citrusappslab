@@ -8,8 +8,10 @@ const Services = () => {
   const { theme } = useTheme(); // Access theme from context
   return (
     <div className={`px-4 md:px-14 lg:px-24 py-28 ${theme} bg-background`}>
-      <h2 className="text-4xl text-orange-400 mb-2">We Deliver</h2>
-      <h2 className="text-4.5xl font-bold mb-8">Reliable Services</h2>
+      <h2 className="text-4xl text-orange-400 mb-2 text-center">We Deliver</h2>
+      <h2 className="text-4.5xl font-bold mb-8 text-center">
+        Reliable Services
+      </h2>
       <div className="service-cards text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
         <div className="bg-cardBackground px-6 pt-6 pb-9 rounded-2xl">
           <div>

@@ -15,6 +15,12 @@ import CASE_1 from "./case_1.webp";
 import CASE_2 from "./case_2.png";
 import CASE_3 from "./case_3.png";
 import COLLABORATE from "./collaborate.jpg";
+import USER_1 from "./user1.jpg";
+import USER_2 from "./user2.jpeg";
+import USER_3 from "./user3.jpeg";
+import USER_4 from "./user4.jpeg";
+import USER_5 from "./user5.jpeg";
+import USER_6 from "./user6.jpeg";
 
 const IMAGES = {
   LOGO,
@@ -34,6 +40,12 @@ const IMAGES = {
   CASE_2,
   CASE_3,
   COLLABORATE,
+  USER_1,
+  USER_2,
+  USER_3,
+  USER_4,
+  USER_5,
+  USER_6,
 };
 
 export default IMAGES;
