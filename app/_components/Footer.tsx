@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import IMAGES from "@/assets/images";
+import { FaFacebook, FaPhone } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -39,101 +45,106 @@ const Footer = () => {
             <h2 className="text-2xl mb-6">Navigation</h2>
             <ul className="">
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Case Studies
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Our Story
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Product Development
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   How we work
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Provacy Policy
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Tterms & Conditions
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
+                <Link
+                  href=""
                   className="hover:text-yellow-600 hover:transition transition"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="border-b border-white md:border-b-0 mb-5">
             <h2 className="text-2xl mb-6">Navigation</h2>
             <ul className="">
-              <li className="hover:text-yellow-600 hover:transition transition mb-1">
-                +44 1223 782 686
+              <li className="hover:text-yellow-600 hover:transition transition mb-1 flex gap-4 items-center">
+                <FaPhone   color="#f7941e"/>+44 1223 782 686
               </li>
-              <li className="hover:text-yellow-600 hover:transition transition mb-1">
-                info@netnexus.co.uk
+              <li className="hover:text-yellow-600 hover:transition transition mb-1 flex gap-4 items-center">
+                <MdEmail  color="#f7941e"/>info@netnexus.co.uk
               </li>
               <li className="mb-1">
-                <a
-                  href="/"
-                  className="hover:text-yellow-600 hover:transition transition"
+                <Link
+                  href=""
+                  className="hover:text-yellow-600 hover:transition transition flex gap-4 items-center"
                 >
-                  Future Business Centre, Guildhall, Market Square, Cambridge,
+                  <FaLocationDot size={24} color="#f7941e"/>Future Business Centre, Guildhall, Market Square, Cambridge,
                   CB2 3QJ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className=" mb-5">
             <h2 className="text-2xl mb-6">Social Media</h2>
+            <div className="flex gap-4">
+              <Link href="https://web.facebook.com/profile.php?id=61564952752878&_rdc=1&_rdr"><FaFacebook color="#f7941e"/></Link>
+              <Link href="https://www.instagram.com/citrusappslab"><FaInstagram color="#f7941e"/></Link>
+              <Link href="https://www.linkedin.com/company/citrus-apps-lab/"><FaLinkedin color="#f7941e"/></Link>
+            </div>
           </div>
         </div>
       </div>

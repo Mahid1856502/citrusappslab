@@ -31,6 +31,13 @@ import CASE_BANNER_3 from "./case_study/case-no-3.jpg";
 import CASE_BANNER_4 from "./case_study/case-no-4.png";
 import CASE_BANNER_5 from "./case_study/case-no-5.webp";
 import CASE_BANNER_6 from "./case_study/case-no-6.png";
+import ourStory_1 from "./our-story/story_1.png";
+import ourStory_2 from "./our-story/story_2.png";
+import ourStory_3 from "./our-story/story_3.png";
+import ourStory_4 from "./our-story/story_4.png";
+import ourStory_5 from "./our-story/story_5.png";
+import ourStory_6 from "./our-story/story_6.png";
+import userIcon from "./user_icon.png";
 
 import STEP_1 from "./process/step-1.jpg";
 import STEP_2 from "./process/step-2.webp";
@@ -96,6 +103,13 @@ const IMAGES = {
   CYBER_SECURITY,
   CYBER_SECURITY_2,
   CYBER_SECURITY_3,
+  ourStory_1,
+  ourStory_2,
+  ourStory_3,
+  ourStory_4,
+  ourStory_5,
+  ourStory_6,
+  userIcon,
 };
 
 export default IMAGES;
