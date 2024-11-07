@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <div>
       <div className="contact-attachement relative before:opacity-50">
-        <div className="grid grid-cols-1 lg:grid-cols-2 px-4 md:px-14 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gen-p">
           <div className="text-left py-32 relative">
-            <h2 className="text-3xl text-orange-400 mb-5">We offer</h2>
+            <h2 className="text-3xl text-orange-400 mb-5">Contact</h2>
             <h2 className="text-5xl text-white font-bold mb-5">
-              Trusted Software Partnership
+              Discover how we can help{" "}
             </h2>
             <p className="text-white">
               The opportunity to discuss your specific pain points and
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer bg-black px-4 md:px-14 lg:px-24 text-white">
+      <div className="footer bg-black gen-p text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 pt-14 border-b border-white">
           <div className="logo mb-5">
             <div className="">

@@ -96,19 +96,21 @@ const Testimonials = () => {
 
   console.log("activeIndex", activeIndex);
   return (
-    <div className={`text-left px-4 md:px-14 lg:px-24 ${theme} bg-background`}>
+    <div className={`text-left gen-p pt-16 ${theme} bg-background`}>
       <h2 className="text-center text-4xl text-orange-400 mb-2">We Deliver</h2>
       <h2 className="text-center text-4.5xl font-bold mb-8">
         Reliable Services
       </h2>
       <Carousel
         responsive={responsive}
-        // autoPlay
+        autoPlay
+        autoPlaySpeed={3000}
         infinite
         afterChange={handleAfterChange} // Update active slide on change
         customTransition="transform 300ms ease-in-out"
         showDots
         renderDotsOutside
+        arrows={false}
       >
         {testimonials.map((item, index) => (
           <div

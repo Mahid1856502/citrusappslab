@@ -7,7 +7,7 @@ const Offers = () => {
 
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 gap-9 px-4 md:px-14 lg:px-24 py-14 bg-background ${theme}`}
+      className={`grid grid-cols-1 md:grid-cols-2 gap-9 gen-p py-14 bg-background ${theme}`}
     >
       <div className="text-left ">
         <h2 className="text-4xl text-orange-400 mb-4">We offer</h2>

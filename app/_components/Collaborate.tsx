@@ -8,7 +8,7 @@ import React from "react";
 const Collaborate = () => {
   const { theme } = useTheme(); // Access theme from context
   return (
-    <div className={`px-4 md:px-14 lg:px-24 py-28 ${theme} bg-background`}>
+    <div className={`gen-p py-28 ${theme} bg-background`}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-start items-center">
         <div>
           <h2 className="text-3xl font-bold mb-5">

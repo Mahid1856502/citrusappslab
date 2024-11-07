@@ -38,6 +38,9 @@ const config: Config = {
       fontFamily: {
         sans: ["Saira", "sans-serif"],
       },
+      fontSize: {
+        "4.5xl": "40px",
+      },
     },
   },
   darkMode: "class",

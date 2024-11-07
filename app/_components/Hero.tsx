@@ -11,7 +11,7 @@ const Hero = () => {
         className="h-screen object-cover"
         alt=""
       />
-      <div className="absolute flex items-center px-4 md:px-14 lg:px-24 top-0 left-0 w-full h-full text-start">
+      <div className="absolute flex items-center gen-p top-0 left-0 w-full h-full text-start">
         <div>
           <Typewriter
             textArray={["Innovate.", "Create.", "Succeed."]}

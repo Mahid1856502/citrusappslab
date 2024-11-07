@@ -5,9 +5,7 @@ import React from "react";
 const Engage = () => {
   const { theme } = useTheme();
   return (
-    <div
-      className={`text-left px-4 md:px-14 lg:px-24 py-28 ${theme} bg-background`}
-    >
+    <div className={`text-left gen-p py-28 ${theme} bg-background`}>
       <h2 className="text-3xl text-orange-400 mb-2">How it Works</h2>
       <h2 className="text-4.5xl  font-bold mb-3">To Engage with Us</h2>
       <p className="mb-8 text-heading">

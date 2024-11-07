@@ -8,7 +8,7 @@ import React from "react";
 const Features = () => {
   const { theme } = useTheme(); // Access theme from context
   return (
-    <div className={`px-4 md:px-14 lg:px-24 py-28 ${theme} bg-background`}>
+    <div className={`gen-p py-28 ${theme} bg-background`}>
       <h2 className="text-4xl text-orange-400 mb-2">We Provide</h2>
       <h2 className="text-4.5xl font-bold mb-8">Unique Approach</h2>
       <div className="service-cards text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">

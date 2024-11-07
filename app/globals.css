@@ -164,3 +164,13 @@
     opacity: 0;
   }
 }
+
+.react-multi-carousel-track {
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+/* short for generic padding */
+.gen-p {
+  @apply px-4 md:px-14 lg:px-24;
+}

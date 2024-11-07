@@ -1,4 +1,3 @@
-// StarRating.tsx
 import React from "react";
 import { IoStar } from "react-icons/io5";
 
@@ -15,7 +14,11 @@ const StarRating = ({ rating }: StarRatingProps) => {
   return (
     <div className="flex space-x-1">
       {[...Array(5)].map((_, index) => (
-        <IoStar className={`text-xl ${getStarStyle(index)}`} size={20} />
+        <IoStar
+          key={index}
+          className={`text-xl ${getStarStyle(index)}`}
+          size={20}
+        />
       ))}
     </div>
   );

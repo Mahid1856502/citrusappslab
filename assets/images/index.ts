@@ -21,6 +21,16 @@ import USER_3 from "./user3.jpeg";
 import USER_4 from "./user4.jpeg";
 import USER_5 from "./user5.jpeg";
 import USER_6 from "./user6.jpeg";
+import SMS from "./contacts/sms.png";
+import LOCATION from "./contacts/location.png";
+import CONACT_BANNER from "./contacts/contact_banner.png";
+import CALL from "./contacts/call.png";
+import CASE_BANNER_1 from "./case_study/case-no-1.webp";
+import CASE_BANNER_2 from "./case_study/case-no-2.webp";
+import CASE_BANNER_3 from "./case_study/case-no-3.jpg";
+import CASE_BANNER_4 from "./case_study/case-no-4.png";
+import CASE_BANNER_5 from "./case_study/case-no-5.webp";
+import CASE_BANNER_6 from "./case_study/case-no-6.png";
 
 const IMAGES = {
   LOGO,
@@ -46,6 +56,16 @@ const IMAGES = {
   USER_4,
   USER_5,
   USER_6,
+  SMS,
+  LOCATION,
+  CONACT_BANNER,
+  CALL,
+  CASE_BANNER_1,
+  CASE_BANNER_2,
+  CASE_BANNER_3,
+  CASE_BANNER_4,
+  CASE_BANNER_5,
+  CASE_BANNER_6,
 };
 
 export default IMAGES;
