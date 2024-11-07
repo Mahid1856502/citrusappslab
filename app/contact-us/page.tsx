@@ -44,7 +44,7 @@ const ContactUs = () => {
   return (
     <div className={`relative ${theme}  bg-background`}>
       <Image src={IMAGES.CONACT_BANNER} className="w-full" alt="" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gen-p gap-9 items-end py-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gen-p gap-9 items-end py-16 md:py-28">
         <div>
           {/* Contact Information */}
           <div className="flex items-center text-start gap-3 mb-6">

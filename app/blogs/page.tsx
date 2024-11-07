@@ -6,7 +6,7 @@ import IMAGES from "@/assets/images";
 import { useTheme } from "@/context/themeContext";
 
 const Blogs = () => {
-  const { theme } = useTheme(); // Access theme from context
+  const { theme } = useTheme();
   const allBlogs = [
     {
       id: 1,
@@ -16,77 +16,69 @@ const Blogs = () => {
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Blog",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 2,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Blog",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 3,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Blog",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 4,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Blog",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 5,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Blog",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 6,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Cybersecurity",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 7,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Cybersecurity",
-      link: "https://netnexus.co.uk/",
     },
     {
-      id: 1,
+      id: 8,
       text_yellow: "A Two-Sided Platform for Buying and Selling Authentic Food",
       heading: "Website and App Development for Online Food Marketplace",
       span_1: "September 16, 2024",
       span_2: "12 min read",
       image: IMAGES.CASE_1,
       type: "Software and Tools",
-      link: "https://netnexus.co.uk/",
     },
   ];
 
@@ -153,7 +145,7 @@ const Blogs = () => {
         {filteredCase.slice(page * 6 - 6, page * 6).map((item, i) => {
           return (
             <Link
-              href={`${item.link}`}
+              href={`/blogs/${item.id}`}
               key={i}
               className="rounded-2xl shadow-md shadow-lightGray overflow-hidden"
             >

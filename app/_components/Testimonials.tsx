@@ -2,9 +2,11 @@
 import { useTheme } from "@/context/themeContext";
 import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import TestimonialsCard from "./testimonials/TestimonialsCard";
 import IMAGES from "@/assets/images";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const Testimonials = () => {
   const { theme } = useTheme();
@@ -86,30 +88,56 @@ const Testimonials = () => {
     },
   ];
 
-  // Handler to update the active slide index
-  const handleAfterChange = (
-    previousSlide: number,
-    { currentSlide }: { currentSlide: number }
-  ) => {
-    setActiveIndex(currentSlide + 1);
+  const settings = {
+    focusOnSelect: true,
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
+    autoplay: true,
+    beforeChange: (current: number, next: number) => setActiveIndex(next),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   console.log("activeIndex", activeIndex);
   return (
     <div className={`text-left gen-p pt-16 ${theme} bg-background`}>
       <h2 className="text-center text-4xl text-orange-400 mb-2">We Deliver</h2>
-      <h2 className="text-center text-4.5xl font-bold mb-8">
+      <h2 className="text-center text-4xl md:text-4.5xl font-bold mb-8">
         Reliable Services
       </h2>
-      <Carousel
+      {/* <Carousel
         responsive={responsive}
         autoPlay
         autoPlaySpeed={3000}
         infinite
         afterChange={handleAfterChange} // Update active slide on change
         customTransition="transform 300ms ease-in-out"
-        showDots
-        renderDotsOutside
+        // showDots
+        // renderDotsOutside
         arrows={false}
       >
         {testimonials.map((item, index) => (
@@ -124,7 +152,19 @@ const Testimonials = () => {
             <TestimonialsCard data={item} />
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
+      <Slider {...settings}>
+        {testimonials.map((item, index) => (
+          <div
+            key={item.id}
+            className={`relative p-8 mx-3 rounded-xl bg-cardBackground min-h-[530px] cursor-grab transition-transform duration-300 ${
+              index === activeIndex ? "scale-100" : "opacity-40 scale-75"
+            }`}
+          >
+            <TestimonialsCard data={item} />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

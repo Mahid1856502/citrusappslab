@@ -7,9 +7,9 @@ import React from "react";
 const Services = () => {
   const { theme } = useTheme(); // Access theme from context
   return (
-    <div className={`gen-p py-28 ${theme} bg-background`}>
+    <div className={`gen-p py-16 md:py-28 ${theme} bg-background`}>
       <h2 className="text-4xl text-orange-400 mb-2 text-center">We Deliver</h2>
-      <h2 className="text-4.5xl font-bold mb-8 text-center">
+      <h2 className="text-4xl md:text-4.5xl font-bold mb-8 text-center">
         Reliable Services
       </h2>
       <div className="service-cards text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">

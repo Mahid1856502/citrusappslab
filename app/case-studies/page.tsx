@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { allCases } from "@/constant";
+import { ALL_CASES } from "@/constant";
 import { useTheme } from "@/context/themeContext";
 import Testimonials from "../_components/Testimonials";
 
 const CaseStudies = () => {
   const { theme } = useTheme();
   return (
-    <div className={` py-28 ${theme} bg-background`}>
+    <div className={` py-16 md:py-28 ${theme} bg-background`}>
       <div className="text-start my-16 gen-p">
         <h1 className="text-heading  md:leading-tight text-xl md:text-2xl lg:text-4.5xl mb-4 font-semibold">
           Selected Success Stories
@@ -27,9 +27,9 @@ const CaseStudies = () => {
         </p>
       </div>
       <div className="">
-        {allCases.map((item, i) => (
+        {ALL_CASES.map((item, i) => (
           <div
-            className={`gen-p grid grid-cols-1 md:grid-cols-2 gap-7 py-28 items-center${
+            className={`gen-p grid grid-cols-1 md:grid-cols-2 gap-7 py-16 md:py-28 items-center${
               item.id % 2 === 0 && " bg-cardBackground"
             }`}
             key={i}

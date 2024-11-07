@@ -11,7 +11,7 @@ const Offers = () => {
     >
       <div className="text-left ">
         <h2 className="text-4xl text-orange-400 mb-4">We offer</h2>
-        <h2 className="text-4.5xl font-bold mb-4">
+        <h2 className="text-4xl md:text-4.5xl font-bold mb-4">
           Trusted Software Partnership
         </h2>
         <p className="text-heading mb-4">

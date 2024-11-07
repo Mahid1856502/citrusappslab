@@ -112,13 +112,13 @@ const Navbar = () => {
           {dropdownOpen === "process" && (
             <div className="absolute left-0 bg-white shadow-md rounded-lg p-2">
               <Link
-                href="/about/our-team"
+                href="/processes/product-development"
                 className="block p-4 rounded-md py-2 text-nowrap text-black hover:text-white hover:bg-primary"
               >
                 Product Development{" "}
               </Link>
               <Link
-                href="/about/mission"
+                href="/processes/cyber-security"
                 className="block p-4 rounded-md py-2 text-nowrap text-black hover:text-white hover:bg-primary"
               >
                 Cyber Security

@@ -170,6 +170,10 @@
   padding-top: 30px !important;
 }
 
+.slick-list {
+  padding: 60px !important;
+}
+
 /* short for generic padding */
 .gen-p {
   @apply px-4 md:px-14 lg:px-24;

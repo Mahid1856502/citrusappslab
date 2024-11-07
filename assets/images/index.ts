@@ -32,6 +32,21 @@ import CASE_BANNER_4 from "./case_study/case-no-4.png";
 import CASE_BANNER_5 from "./case_study/case-no-5.webp";
 import CASE_BANNER_6 from "./case_study/case-no-6.png";
 
+import STEP_1 from "./process/step-1.jpg";
+import STEP_2 from "./process/step-2.webp";
+import STEP_3 from "./process/step-3.webp";
+import STEP_4 from "./process/step-4.webp";
+import STEP_5 from "./process/step-5.webp";
+import DASH_ELEMENT from "./process/dash-element.png";
+
+import CERTIFICATES_2 from "./certificates/certificate-2.webp";
+import CERTIFICATES_3 from "./certificates/certificate-3.webp";
+import CERTIFICATES_1 from "./certificates/certificate-1.webp";
+
+import CYBER_SECURITY from "./cyber-secutity.webp";
+import CYBER_SECURITY_2 from "./cyber-secutity-2.webp";
+import CYBER_SECURITY_3 from "./cyber-secutity-3.webp";
+
 const IMAGES = {
   LOGO,
   BG,
@@ -66,6 +81,21 @@ const IMAGES = {
   CASE_BANNER_4,
   CASE_BANNER_5,
   CASE_BANNER_6,
+
+  STEP_1,
+  STEP_2,
+  STEP_3,
+  STEP_4,
+  STEP_5,
+  DASH_ELEMENT,
+
+  CERTIFICATES_1,
+  CERTIFICATES_2,
+  CERTIFICATES_3,
+
+  CYBER_SECURITY,
+  CYBER_SECURITY_2,
+  CYBER_SECURITY_3,
 };
 
 export default IMAGES;
