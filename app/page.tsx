@@ -1,5 +1,3 @@
-import IMAGES from "@/assets/images";
-import Image from "next/image";
 import Hero from "./_components/Hero";
 import Offers from "./_components/Offers";
 import Services from "./_components/Services";
