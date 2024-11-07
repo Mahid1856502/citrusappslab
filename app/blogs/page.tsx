@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import IMAGES from "@/assets/images";
 import { useTheme } from "@/context/themeContext";
+import { FaCalendarDay } from "react-icons/fa6";
+import { GoClock } from "react-icons/go";
+import { MdArrowOutward } from "react-icons/md";
 
 const Blogs = () => {
   const { theme } = useTheme(); // Access theme from context
@@ -103,8 +106,40 @@ const Blogs = () => {
   };
 
   return (
-    <div className={`py-10 bg-background ${theme} pt-28 gen-p`}>
-      <div className=" md:flex justify-between">
+    <div className={`py-10 bg-background ${theme} pt-36 gen-p`}>
+      <div className="text-center mb-5">
+        <h1 className="text-3xl md:text-4.5xl font-semibold text-heading mb-1">NetNexus Blog <span>|</span> Tips, Trends & Guides</h1>
+        <p className="flex gap-2 justify-center flex-wrap text-heading"><span>Business owners</span> <span>|</span> <span>Software Developers</span> <span>|</span> <span>Software Development Companies</span> <span>|</span> <span>Digital Product Developers</span></p>
+      </div>
+      <div>
+        <div className="md:flex justify-end relative pt-3 pb-9 border-b">
+          <Image src={IMAGES.CASE_1} className="rounded-2xl w-full md:w-4/6" alt=""/>
+          <div className="absolute bg-black text-white font-medium px-5 py-1.5 rounded-full top-8 right-6">
+            Blog
+          </div>
+          <Link href="" className="md:absolute rounded-2xl shadow-md shadow-lightGray bg-background md:top-10 lg:top-20 left-0 md:w-1/2 p-9">
+            <p className="text-xs sm:text-base md:text-xs lg:text-base text-heading pb-2 gap-4 flex items-center">
+              <div className="flex gap-1 items-center">
+                <FaCalendarDay />
+                <span>October 28, 2024</span>
+              </div>  
+              <div className="flex gap-1 items-center">
+                <GoClock/>
+                <span>14 min read</span>
+              </div>                                  
+            </p>
+            <h2 className="font-semibold text-xl sm:text-3xl md:text-xl lg:text-4.5xl text-center lg:leading-tight mb-3">How do I create a  startup software project</h2>
+            <div className="flex gap-3 items-center">
+              <div><Image src={IMAGES.userIcon} className="max-w-14 rounded-full" alt=""/></div>
+              <div className="text-heading font-medium">
+                <p className="">Zach</p>
+                <p className="">Managing Editor</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className=" lg:flex justify-between mt-9">
         <div>
           <h2 className="text-3xl font-semibold text-heading pb-6 text-start">
             Latest Articles
@@ -157,7 +192,7 @@ const Blogs = () => {
               key={i}
               className="rounded-2xl shadow-md shadow-lightGray overflow-hidden"
             >
-              <div className="relative group">
+              <div className="relative group overflow-hidden">
                 <Image
                   alt=""
                   className="w-full group-hover:scale-110 group-hover:transition-all transition-all"
@@ -173,13 +208,19 @@ const Blogs = () => {
                 <h3 className="text-lg sm:text-2xl text-heading font-medium pt-5 pb-2">
                   {item.heading}
                 </h3>
-                <p className="text-xs sm:text-base text-heading pb-2 gap-4 flex">
-                  <span>{item.span_1}</span>
-                  <span>{item.span_2}</span>
+                <p className="text-xs sm:text-base text-heading pb-2 gap-4 flex items-center">
+                  <div className="flex gap-1 items-center">
+                    <FaCalendarDay />
+                    <span>{item.span_1}</span>
+                  </div>  
+                  <div className="flex gap-1 items-center">
+                    <GoClock/>
+                    <span>{item.span_2}</span>
+                  </div>                                  
                 </p>
-                <div>
-                  <span className="pb-1 border-b-2 border-heading text-heading font-semibold text-xs sm:text-base">
-                    Read More
+                <div >
+                  <span className=" text-heading font-semibold text-xs sm:text-base flex items-end">
+                    <span className="pb-1 border-b-2 border-heading pe-2">Read More</span> <span className="pb-1 border-b-2 border-heading"><MdArrowOutward size={20}/></span>
                   </span>
                 </div>
               </div>

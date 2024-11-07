@@ -1,27 +1,32 @@
 "use client";
 import { useTheme } from "@/context/themeContext";
 import React from "react";
+interface EngageProps {
+  title: string;
+  heading: string
+  info:string
+}
 
-const Engage = () => {
+
+
+const Engage: React.FC<EngageProps> =(props) => {
   const { theme } = useTheme();
   return (
     <div className={`text-left gen-p py-28 ${theme} bg-background`}>
-      <h2 className="text-3xl text-orange-400 mb-2">How it Works</h2>
-      <h2 className="text-4.5xl  font-bold mb-3">To Engage with Us</h2>
+      <h2 className="text-3xl text-orange-400 mb-2">{props.title}</h2>
+      <h2 className="text-4.5xl  font-bold mb-3">{props.heading}</h2>
       <p className="mb-8 text-heading">
-        Here’s a breakdown of how we engage with our clients before the project
-        kick off
+        {props.info}
       </p>
       <div className="working-banners">
         <div className="bg-cardBackground rounded-2xl px-12 py-9 flex gap-5 items-center my-5">
           <h2 className="text-orange-400 font-bold text-5xl">1.</h2>
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              Experience Exclusive Services{" "}
+              Free Discovery Call{" "}
             </h3>
             <p className="text-heading">
-              We design and develop bespoke solutions, form top talent teams end
-              to end tailored to our client’s software challenge.
+              Our journey begins with a complimentary discovery call. During this session, we listen to your needs, understand your challenges, and gather essential information about your project. This call helps us tailor our approach to meet your unique requirements.
             </p>
           </div>
         </div>
@@ -29,11 +34,10 @@ const Engage = () => {
           <h2 className="text-orange-400 font-bold text-5xl">2.</h2>
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              Experience Exclusive Services{" "}
+              Our Proposal{" "}
             </h3>
             <p className="text-heading">
-              We design and develop bespoke solutions, form top talent teams end
-              to end tailored to our client’s software challenge.
+              Following the discovery call, we craft a detailed proposal outlining our approach, timeline, and cost. This proposal is designed to give you a clear picture of how we plan to achieve your goals, ensuring transparency and setting the stage for a successful partnership.
             </p>
           </div>
         </div>
@@ -41,11 +45,10 @@ const Engage = () => {
           <h2 className="text-orange-400 font-bold text-5xl">3.</h2>
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              Experience Exclusive Services{" "}
+              Initial Workshop{" "}
             </h3>
             <p className="text-heading">
-              We design and develop bespoke solutions, form top talent teams end
-              to end tailored to our client’s software challenge.
+              Next, we conduct an initial workshop with your team. This interactive session allows us to dive deeper into your project requirements, brainstorm solutions, and align our strategies. To secure this workshop, we require a deposit payment, which varies based on the complexity of your project. This ensures that we can dedicate the necessary resources and expertise to plan your project thoroughly.
             </p>
           </div>
         </div>
@@ -53,11 +56,10 @@ const Engage = () => {
           <h2 className="text-orange-400 font-bold text-5xl">4.</h2>
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              Experience Exclusive Services{" "}
+              Project Kick-Off{" "}
             </h3>
             <p className="text-heading">
-              We design and develop bespoke solutions, form top talent teams end
-              to end tailored to our client’s software challenge.
+              Once everything is in place, we move to the official kick-off. This marks the start of the project where our dedicated team begins working on your bespoke solution. We outline key milestones and establish communication channels to keep you informed throughout the process.
             </p>
           </div>
         </div>

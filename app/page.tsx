@@ -17,7 +17,7 @@ export default function Home() {
       <CaseStudies />
       <Testimonials />
       <Collaborate />
-      <Engage />
+      <Engage title="How it Works" heading="To Engage with Us" info="Here’s a breakdown of how we engage with our clients before the project kick off"/>
     </div>
   );
 }
